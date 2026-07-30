@@ -1,6 +1,7 @@
 // Print the greeting on a single line below.
+function square(n) {
+    return n ** 2
+}
+
 const n = Number(require('fs').readFileSync(0, 'utf-8').trim());
-let sum = 0;
-// Loop and accumulate, then print sum.
-for (let i = 1; i <= n; i++) sum += i;
-console.log(sum);
+console.log(square(n));
